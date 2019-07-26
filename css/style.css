@@ -36,9 +36,18 @@
  font-family: var(--first-font);
 }
 
+.bar-menu {
+    display: none;
+    top: 10px;
+    right: 25px;
+    position: absolute;
+    font-size: 2.4rem;
+    padding-bottom: 10px;
+}
+
 .nav-desktop {
     box-sizing: border-box;
-    justify-self: end;
+    
 }
 
 .nav-desktop ul {
@@ -217,8 +226,55 @@
 
 @media only screen and (max-width: 426px) {
 
-    .desktop-menu {
-        opacity: 0;
+    .aside-nav {
+        padding-top: 10px;
+    }
+
+    .bar-menu {
+        display: block;
+        z-index:1;
+    }
+
+    #menu {
+        display: none;
+    }
+    .nav-desktop {
+        width: 50vw;
+        /* height: calc(100vh - 45px); */
+        top: 45px;
+        right: 0;
+        position: absolute;
+        background-color:#fff;
+        opacity: .8;
+    }
+ 
+    .nav-desktop ul {
+        display: block;
+    }
+
+    .nav-desktop ul li{
+        text-decoration: none;
+        padding: 15px 0px 15px 0px;
+        list-style: none;
+        text-align: center;
+    }
+
+    .nav-desktop ul li:nth-of-type(4){
+        padding-right: 0px;
+    }
+
+    .nav-desktop ul li a{
+        font-family: var(--first-font);
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 2.1rem;
+        letter-spacing: 0.02rem;
+        text-decoration: none;
+        color: #515151;
+    }
+
+    .nav-desktop ul li a:hover{
+        color:#FF9A3D;
     }
 
     .banner p:nth-of-type(1) {
@@ -245,8 +301,59 @@
 
 @media only screen and (min-width: 427px) and (max-width: 960px) {
     
-    .desktop-menu {
-        opacity: 0;
+    .aside-nav {
+        padding-top: 10px;
+    }
+
+    .bar-menu {
+        display: block;
+        z-index:1;
+    }
+
+    #menu {
+        display: none;
+    }
+    .nav-desktop {
+        width: 50vw;
+        /* height: calc(100vh - 45px); */
+        top: 45px;
+        right: 0;
+        position: absolute;
+        background-color:#fff;
+        opacity: .8;
+     }
+     
+    .nav-desktop ul {
+        display: block;
+    }
+    
+    .nav-desktop ul li{
+        text-decoration: none;
+        padding: 15px 0px 15px 0px;
+        list-style: none;
+        text-align: center;
+    }
+    
+    .nav-desktop ul li:nth-of-type(4){
+       padding-right: 0px;
+    }
+    
+    .nav-desktop ul li a{
+        font-family: var(--first-font);
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 2.1rem;
+        letter-spacing: 0.02rem;
+        text-decoration: none;
+        color: #515151;
+    }
+    
+    .nav-desktop ul li a:hover{
+        color:#FF9A3D;
+    }
+
+    .active {
+        display: block;
     }
 
     .banner p:nth-of-type(1) {
@@ -267,6 +374,9 @@
 }
 
 @media only screen and (min-width: 961px)  {
+    #menu {
+        display: flex !important ;
+        justify-self: end;
+    }
 
-   
 }
