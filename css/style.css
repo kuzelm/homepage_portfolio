@@ -207,6 +207,7 @@
     height: 5rem;
     width: 20rem;
     border-radius: 1.5rem;
+    border: none;
     background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
     font-family: var(--first-font);
     font-weight: bold;
@@ -269,6 +270,7 @@
     display: flex;
     /* flex-wrap: wrap; */
     align-items: center;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
 
 }
 
@@ -381,6 +383,7 @@
     align-items: center;
     justify-content: center;
     /* flex-wrap: wrap; */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
 }
 
 .skills div:nth-of-type(1) {
@@ -461,33 +464,100 @@
 
 .photo-1  {
     /* grid-area: 2/1/2/3; */
-    background-color: red;
+    background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%), url(../photo/work-abroad-unspl.png);
     height: 346px;
     width: 530px; 
 }
+
+.photo-1 p:nth-of-type(1) {
+    font-family: var(--first-font);
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 4.7rem;
+    letter-spacing: 0.02rem;
+    padding: 25px 0 0 36px;
+    color:#fff;
+}
+
+.photo-1 p:nth-of-type(2) {
+    font-family: var(--first-font);
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.02rem;
+    padding: 0 56px 0 36px;
+    color:#fff;
+}
+
 .photo-2  {
     /* grid-area: 2/3/2/4; */
-    background-color:green;
+    /* background-color:green; */
+    background-image: url(../photo/20180619_150208-1.png);
     height: 346px;
     width: 392px; 
 }
 .photo-3  {
     /* grid-area: 2/4/2/6; */
-    background-color:greenyellow;
+    /* background-color:greenyellow; */
+    background-image: url(../photo/RAW-BEETROOT-MINT-SALAD-healthy-plant-based-vegan-dairy-free-gluten-free-raw-orange-dressing-carrot-raisins-seeds-easy-recipe-begoodorganics-buffyellen-nutritionist-naturopath-begoodorganics-3.png);
     height: 346px;
     width: 518px; 
 }
 .photo-4  {
     /* grid-area: 3/1/3/2; */
-    background-color:yellow;
+    /* background-color:yellow; */
+    background-image: url(../photo/32739439685_8ac3345836_b.png);
     height: 346px;
     width:  392px;
 }
 .photo-5  {
     /* grid-area: 3/2/3/6; */
-    background-color:yellowgreen;
+    /* background-color:yellowgreen; */
+    background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%), url(../photo/porady-grafiki_10_u1.png);
     height: 346px;
     width:  1048px;
+}
+
+.photo-5 p:nth-of-type(1) {
+    font-family: var(--first-font);
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 4.7rem;
+    letter-spacing: 0.02rem;
+    padding: 25px 0 0 36px;
+    color:#fff;
+}
+
+.photo-5 p:nth-of-type(2) {
+    font-family: var(--first-font);
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: 0.02rem;
+    padding: 0 575px 0 36px;
+    color:#fff;
+}
+
+.sml-btn {
+    box-sizing: border-box;
+    height: 5rem;
+    width: 10rem;
+    border-radius: 1.5rem;
+    border:none;
+    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+    font-family: var(--first-font);
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 35px 0 0 36px;
+   
+}
+.sml-btn:hover {
+    background: #fff;    
+    color:#FFC53D;
+    border: 1px solid #FFC53D;
 }
 
 
@@ -601,6 +671,10 @@
         align-self:center;
     
     }   */
+
+    .photo-5 p:nth-of-type(2) {
+        padding: 0 10px 0 36px;
+    }
 }
 
 @media only screen and (max-width: 549px) {
@@ -731,6 +805,10 @@
     .about-description p {
         
         padding-bottom: 50px;
+    }
+
+    .photo-5 p:nth-of-type(2) {
+        padding: 0 10px 0 36px;
     }
 
 }
