@@ -2,6 +2,7 @@
     --first-font:'Raleway', sans-serif;
     --second-font: 'Ubuntu', sans-serif;
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 *{
@@ -17,6 +18,7 @@
 .navbar {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
 }
 .aside-nav {
     box-sizing: border-box;
@@ -445,7 +447,7 @@
 
 .portfolio h1 {
     /* grid-area: 1/1/1/6; */
-    padding: 0 0 18px 0;
+    padding: 18px 0 18px 0;
     color: #222;
     font-size: 3.2rem;
     font-family: var(--second-font);
@@ -560,7 +562,113 @@
     border: 1px solid #FFC53D;
 }
 
+.contact-us {
+    background-color:#FAFAFF;;
+    /* height: 100%; */
+    margin-top:7.5rem;
+    /* margin-bottom: 9rem; */
 
+}
+
+.contact-us h1 {
+    color: #FFF;
+    font-family: var(--second-font);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 3.9rem;
+    letter-spacing: 0.02rem;
+    padding: 18px 0 18px 150px;
+    
+}
+
+.contact-container {
+    /* background-color:#FF9A3D; */
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    padding-bottom: 7.5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+   
+}
+/* .contact-box {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+} */
+
+.contact-text {
+    grid-area: 1/1/11/10;
+    background-color:#FF9A3D;
+    padding: 0 0 0 50px;
+    display: block;
+    /* width:35%; */
+}
+
+.contact-text img {
+    padding-top: 24px;
+}
+
+.contact-text p {
+    font-family: var(--first-font);
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 3.1rem;
+    letter-spacing: 0.04rem;
+    color:#fff;
+}
+
+.contact-text .down {
+    margin-bottom: 20rem;
+}
+.contact-social {
+    position: static;
+    justify-content: flex-start; 
+
+}
+.contact-text div:nth-of-type(2) p{
+    font-family: var(--second-font);
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.02rem;
+}
+
+.contact-text div:nth-of-type(2) p:nth-of-type(1){
+    padding-top: 0.9rem;
+    font-weight: bold;
+}
+
+.contact-text div:nth-of-type(2) p:nth-of-type(2){
+    font-weight: bold;
+}
+
+.contact-text div:nth-of-type(2) p:nth-of-type(5){
+    padding-bottom: 3.5rem;
+}
+
+.form {
+    grid-area: 1/10/11/21;
+    background-color: #fff;
+    /* width:64%; */
+}
+
+.arrow {
+    grid-area: 2/9/3/10;
+     background-color:#FF9A3D;
+     /* background-color: #000; */
+     transform: translateX(7px) translateY(-25px) rotate(-45deg);
+}
+.go-up {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+
+}
 
 @media only screen and (max-width: 426px) {
 
@@ -654,7 +762,7 @@
         padding-bottom: 50px;
     }
 
-    /* .skills {
+    .skills {
         flex-direction: column;
     }
 
@@ -670,14 +778,18 @@
     .sm-box {
         align-self:center;
     
-    }   */
+    }  
 
     .photo-5 p:nth-of-type(2) {
         padding: 0 10px 0 36px;
     }
+
+    .arrow {
+        transform: translateX(-1px) translateY(-52px) rotate(-45deg) scaleY(0.5);
+    }
 }
 
-@media only screen and (max-width: 549px) {
+@media only screen and (min-width: 427px )and (max-width: 549px) {
     .about {
         flex-direction: column;
     }  
@@ -693,12 +805,21 @@
 
     .skills div:nth-of-type(1) {
         padding-top: 38px;
-        border-right: none
+        border-right: none;
+        
     }
     
+    .skills div:nth-last-of-type(2) {
+        border-bottom: 4px dotted #ffc53d;
+        border-top: 4px dotted #ffc53d;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
     .skills div:nth-of-type(3) {
         border-left: none;
         padding-bottom: 50px;
+        
     }
 
     .sm-box {
@@ -711,7 +832,13 @@
         padding-left: 0px;
     }
 
-
+    .arrow {
+        /* grid-area: 2/9/3/10; */
+        /* background-color: #FF9A3D; */
+        /* background-color: #000; */
+        transform: translateX(3px) translateY(-75px) rotate(-45deg) scaleY(.6);
+        
+    }
     /* .about-description {
        
         width: 549px;
@@ -811,6 +938,11 @@
         padding: 0 10px 0 36px;
     }
 
+    .arrow {
+        
+        transform: translateX(3px) translateY(-75px) rotate(-45deg) scaleY(.6);
+        
+    }
 }
 
 @media only screen and (min-width: 961px)  {
