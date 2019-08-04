@@ -940,7 +940,7 @@
 
     .arrow {
         
-        transform: translateX(3px) translateY(-75px) rotate(-45deg) scaleY(.6);
+        transform: translateX(3px) translateY(-45px) rotate(-45deg) scaleY(.6);
         
     }
 }
