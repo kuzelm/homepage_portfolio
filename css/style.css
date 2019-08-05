@@ -1003,6 +1003,11 @@
         display: flex !important ;
         justify-self: end;
     }
+    .arrow {
+        grid-area: 2/9/3/10;
+         background-color:#FF9A3D;
+         transform: translateX(7px) translateY(-25px) rotate(-45deg);
+    }
     
 
 }
