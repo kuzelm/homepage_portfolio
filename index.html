@@ -10,7 +10,7 @@
     <title>Portofolio</title>
 </head>
 <body>
-    <header class="container navbar">
+    <header class="container navbar" id="top">
         <aside class="aside-nav">
             <i class="fas fa-laptop-code"></i><span>Dev</span>
         </aside>
@@ -125,11 +125,10 @@
     <section class="large contact-us" id="contact">
         <h1>Contact us</h1>
         <div class="container contact-container">
-            <!-- <div class="contact-box"> -->
                 <div class="contact-text">
                     <img src="photo/logo_message.png" alt="icon_message">
                     <p>Please describe your question.</p>
-                    <p>Send me a messade and I will</p>
+                    <p>Send me a message and I will</p>
                     <p class="down">anserw you as soon as possible!</p>
                     
                     <div class="small-container social contact-social">
@@ -147,22 +146,24 @@
                     </div>
                 </div>
                 <div class="form">
-                    Formularz
+                    <p>Let's start!</p>
+                    <div>
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Your e-mail adress">
+                        <input type="text" placeholder="Topic" >
+                        <textarea  rows="8" placeholder="Message"></textarea>
+                        <button class="sml-btn send-btn">Send</button>
+                    </div>
                 </div>
                 <div class="arrow"></div>
-            <!-- </div> -->
         </div>
     </section>
 
-    <footer>
-
+    <footer class="large footer-project">
+        <p>Copyrights &copy 2019 CodersCrew</p>
     </footer>
-  <br>
-  <br>
-  <br>
-  <br>
-  <div class="go-up"></div>
-
+ 
+  <div class="go-up"><a href="#top"><i class="fas fa-arrow-alt-circle-up"></i></a></div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="js/script.js"></script>
