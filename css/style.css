@@ -429,7 +429,11 @@
 .photo-1  {
     background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%), url(../photo/work-abroad-unspl.png);
     height: 346px;
-    width: 530px; 
+    /* width: 530px;  */
+    background-size: cover;
+    background-position: center;
+    min-width: 520px;
+    max-width:530px;
 }
 
 .photo-1 p:nth-of-type(1) {
@@ -455,22 +459,38 @@
 .photo-2  {
     background-image: url(../photo/20180619_150208-1.png);
     height: 346px;
-    width: 392px; 
+    /* width: 392px;  */
+    background-size: cover;
+    background-position: center;
+    min-width: 387px;
+    max-width:392px;
 }
 .photo-3  {
     background-image: url(../photo/test-nazwy.png);
     height: 346px;
-    width: 518px; 
+    /* width: 518px;  */
+    background-size: cover;
+    background-position: center;
+    min-width: 513px;
+    max-width: 518px;
 }
 .photo-4  {
     background-image: url(../photo/32739439685_8ac3345836_b.png);
     height: 346px;
-    width:  392px;
+    /* width:  392px; */
+    background-size: cover;
+    background-position: center;
+    min-width: 382px;
+    max-width:392px;
 }
 .photo-5  {
     background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%), url(../photo/porady-grafiki_10_u1.png);
     height: 346px;
-    width:  1048px;
+    /* width:  1048px; */
+    background-size: cover;
+    background-position: center;
+    min-width: 1038px;
+    max-width:1048px;
 }
 
 .photo-5 p:nth-of-type(1) {
@@ -829,9 +849,7 @@
         flex-direction: column;
        
     }
-    .contact-text {
-       
-    }
+    
     .arrow {
        display: none;
     }
